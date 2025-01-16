@@ -17,13 +17,13 @@ const fileFilter = (
   if (isValidExt && isValidMime) {
     cb(null, true); // Accept the file
   } else {
-    cb(new Error('Only image files are allowed!') as any, false); // TypeScript-কে ভুলটি বলার জন্য টাইপ কাস্টিং
+    cb(new Error('Only image files are allowed!') as any, false);
   }
 };
 
 // Multer setup with storage and file filter
 export const upload = multer({
   storage: storage,
-  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB limit
+  limits: { fileSize: 10 * 1024 * 1024 },
   fileFilter: fileFilter,
 });
