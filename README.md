@@ -1,4 +1,3 @@
-````markdown
 # Social Media Task - Server
 
 This is the backend for the Social Media Task project, built using Node.js, Express.js, and MongoDB. It handles data storage, image uploads, and API endpoints for user submissions and admin dashboard functionality.
@@ -43,6 +42,7 @@ This is the backend for the Social Media Task project, built using Node.js, Expr
    ```bash
    npm install
    ```
+
 ````
 
 3. Create a `.env` file in the root directory and add the following variables:
@@ -63,3 +63,4 @@ This is the backend for the Social Media Task project, built using Node.js, Expr
    ```
 
 ---
+````
